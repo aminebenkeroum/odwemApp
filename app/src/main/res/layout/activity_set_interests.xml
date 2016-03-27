@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ma.win.mewdo.SetInterests">
+
+    <TextView android:text="Help us find your interests to improve your experience " android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:padding="4dp"
+        android:textColor="@color/colorSecondaire"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Do you like Cupcakes ?"
+        android:id="@+id/textView6"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/colorSecondaire"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/interests"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Cup Cakes"
+        android:id="@+id/editInterests"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="25dp"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <com.ns.developer.tagview.widget.TagCloudLinkView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/interestsLabels"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:padding="4dp"
+        app:isDeletable="true"
+        app:tagLayoutColor="#ff2bafe6"
+        app:tagTextSize="8sp"
+        app:tagTextColor="#ffffffff"
+        app:deletableTextSize="8sp"
+        app:deletableTextColor="#ffffffff"
+        android:layout_below="@+id/editInterests"
+        android:layout_alignLeft="@+id/editInterests"
+        android:layout_alignStart="@+id/editInterests"
+        android:layout_alignRight="@+id/editInterests"
+        android:layout_alignEnd="@+id/editInterests"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
